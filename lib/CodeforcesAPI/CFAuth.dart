@@ -3,6 +3,9 @@ import 'package:crypto/crypto.dart';
 import 'package:random_string/random_string.dart';
 import 'package:uri/uri.dart';
 
+
+/// to Add signature
+///
 class CFAuth {
   Map<String, dynamic> options;
 

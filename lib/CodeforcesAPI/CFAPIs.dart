@@ -1,10 +1,12 @@
 import 'package:api_testing/CodeforcesAPI/CodeForcesURLs.dart';
 import 'package:http/http.dart' as http;
 
+/// for Parsing response body
+/// *
 class CFAPIs{
 
   static Future<void> getUserProfile(String username) async {
-    String genURI = CodeForcesURLs.getUserProfileURL(username: username);
+    String genURI = CodeForcesURLs.userProfile(username: username);
     print("genURI=${genURI}");
 
     final genRes = await http.get(
